@@ -15,6 +15,7 @@ function App() {
     }).catch((err) =>{
       console.log(err )
     })
+    alert("payment successfull")
   }
 
   return (

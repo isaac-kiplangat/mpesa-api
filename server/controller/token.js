@@ -3,9 +3,10 @@ const axios = require("axios")
 
 // create access token
 const createToken = async(req, res, next)=>{
+ // Import secret from .env
+  const secret = process.env.MPESA_CONSUMER_SECRET;
+  const consumer = process.env.MPESA_CONSUMER_KEY;
 
-  const  secret = "aMfRhGNL1DpF8tHJL6yMDTk7l0VuweIcGbyNdXdqpKq6JJYZtA93NcxNNfAvHTd0"
-  const  consumer ="ARkJQ3nKFyuuFJGsMtJSpbIrgSMecnnf4NYayGy4ZgipujjO"
   const   auth = new Buffer.from(`${consumer}:${secret}`).toString("base64")
 
   await axios.get(

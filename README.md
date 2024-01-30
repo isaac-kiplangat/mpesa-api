@@ -67,9 +67,6 @@ Before you begin, ensure you have the following prerequisites installed on your 
 
 Refer to the API documentation for detailed information on the available endpoints and their usage. The documentation can be found in the `docs` in` daraja api` directory.
 
-## Contributing
-
-If you'd like to contribute to this project, please follow the [Contribution Guidelines](CONTRIBUTING.md).
 
 ## License
 
